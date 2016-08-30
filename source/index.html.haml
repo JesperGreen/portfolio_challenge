@@ -1,3 +1,8 @@
+.projects
+  - data.projects.each do |project|
+    %h4= project[:name]
+    %p= project[:description]
+
 .welcome
   .logo
     = image_tag 'middleman-logo.svg'
