@@ -1,3 +1,84 @@
+.mail_image {
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.github_image {
+  height: 95px;
+}
+
+.phone_image {
+  height: 90px;
+}
+
+.section_header {
+  font-size: 23px;
+}
+
+.section_body {
+  margin-bottom: 50px;
+}
+
+.image {
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+.image_text {
+  font-size: 80px;
+  color: white;
+  top: 40%;
+  left: 40%;
+  position: absolute;
+}
+
+@keyframes change_text_color {
+  0% {color: white;}
+  25% {color: red;}
+  50% {color: black;}
+  75% {color: red;}
+  100% {color: white;}
+}
+
+.image_text {
+  animation-name: change_text_color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+.contact_heading, .goals_heading {
+  font-size: 42px;
+  text-align: center;
+}
+
+.goals_heading {
+  margin-top: 80px;
+}
+
+.goals_body {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+#grad {
+  background: lightblue; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Safari 5.1-6*/
+  background: -o-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Standard*/
+  opacity: .6;
+}
+
+@media (max-width: 320px) {
+  .image_text {
+    left: 10px;
+    top: 40px;
+  }
+}
+
 /* Navbar */
 ul.topnav {
     list-style-type: none;
