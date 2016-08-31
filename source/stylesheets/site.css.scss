@@ -65,10 +65,10 @@
 
 #grad {
   background: lightblue; /* For browsers that do not support gradients */
-  background: -webkit-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Safari 5.1-6*/
-  background: -o-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Opera 11.1-12*/
-  background: -moz-linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Fx 3.6-15*/
-  background: linear-gradient(to bottom right, firebrick 10%, lightblue 90%); /*Standard*/
+  background: -webkit-linear-gradient(to bottom right, green 10%, white 90%); /*Safari 5.1-6*/
+  background: -o-linear-gradient(to bottom right, green 10%, white 90%); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(to bottom right, green 10%, white 90%); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, green 10%, white 90%); /*Standard*/
   opacity: .6;
 }
 
