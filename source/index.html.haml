@@ -1,11 +1,27 @@
-.welcome
-  .logo
-    = image_tag 'middleman-logo.svg'
-  %h1 Hello Jesper!
-  %p.doc
-    = link_to 'Read Documentation Online', 'https://middlemanapp.com', target: '_blank'
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
 
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
+    / header image
+    #grad.image
+      .image_text Placeholder
+    / my goals
+    .row
+      .small-12.columns
+        .goals_heading Some of my projects
+        .goals_body Projects goes here
+    %hr
+    .row
+  .small-12.columns
+    .goals_heading About Me
+    .goals_body About me here
+
+    %hr/
+    %script{:src => "https://code.jquery.com/jquery-2.1.4.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.js"}
