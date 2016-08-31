@@ -23,5 +23,31 @@
     .goals_body About me here
 
     %hr/
+    / 3 sections
+    .row
+      .contact_heading Contact
+      .small-12.columns
+        .row
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.mail_image{:alt => "", :src => "images/gmail-logo.png"}/
+            .section_header
+              Email
+            .section_body
+              %a{:href => "mailto:jesper_gs_@hotmail.com"} jesper_gs_@hotmail.com
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.github_image{:alt => "", :src => "images/github-logo.png"}/
+            .section_header
+              GitHub
+            .section_body
+              %a{:href => "https://github.com/JesperGreen", :target => "_blank"} GitHub Profile
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.phone_image{:alt => "", :src => "images/phone-logo.jpg"}/
+            .section_header
+              Phone
+            .section_body
+              %a{:href => "tel:+46760805391"} Call me
     %script{:src => "https://code.jquery.com/jquery-2.1.4.js"}
     %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.js"}
