@@ -1,3 +1,9 @@
+.image_self {
+  text-align: center;
+  height: 250px;
+  border-radius: 50%;
+}
+
 .footer {
   text-align: center;
   background-color: blue;
@@ -42,22 +48,19 @@
   color: white;
   top: 40%;
   left: 40%;
-  position: absolute;
+  padding-top: 12%;
+  color: white;
+  text-align: center;
+  /*position: absolute;*/
 }
 
-@keyframes change_text_color {
+/*@keyframes change_text_color {
   0% {color: white;}
-  25% {color: red;}
-  50% {color: black;}
-  75% {color: red;}
+  25% {color: #8FBC8F;}
+  50% {color: #556B2F;}
+  75% {color: #8FBC8F;}
   100% {color: white;}
-}
-
-.image_text {
-  animation-name: change_text_color;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
+}*/
 
 .contact_heading, .goals_heading {
   font-size: 42px;
