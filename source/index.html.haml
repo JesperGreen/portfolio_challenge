@@ -1,11 +1,56 @@
-.welcome
-  .logo
-    = image_tag 'middleman-logo.svg'
-  %h1 Hello Jesper!
-  %p.doc
-    = link_to 'Read Documentation Online', 'https://middlemanapp.com', target: '_blank'
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
 
-.projects
-  - data.projects.each do |project|
-    %h4= project[:name]
-    %p= project[:description]
+    / header image
+    #grad.image
+      .image_text Jesper Green
+    / my goals
+    .row
+      .small-12.columns
+        .goals_heading Some of my projects
+        %ul#myProjects
+          %li
+            %a{:href => "https://github.com/JesperGreen/fizz-buzz"} FizzBuzz
+            %p
+            Doing the logic for the Fizz Buzz game using Ruby.
+          %li
+          %br
+            %a.atm_link{:href => "https://github.com/JesperGreen/atm_challenge"} ATM Challenge
+            %p
+            Doing the logic for an ATM,
+            %br
+            where you as a person can hold an account,
+            %br
+            withdraw and deposit cash and give you a receipt.
+          %li
+          %br
+            %a{:href => "https://github.com/JesperGreen/BMI_challenge"} BMI Calculator
+            %p
+            A very impressive and flashy calculator that
+            %br
+            calculates your BMI using either the metric or imperial system.
+          %li
+          %br
+            %a{:href => "https://www.teamfinder.gg/"} Team Finder
+            %p
+            A site that is still in development,
+            %br
+            created to make it easier for gamers to find people to play with.
+            %br
+    %script{:src => "https://code.jquery.com/jquery-2.1.4.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.js"}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83583708-1', 'auto');
+      ga('send', 'pageview');

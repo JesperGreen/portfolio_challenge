@@ -1,0 +1,57 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "utf-8"}/
+    %title
+    %link{:href => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.min.css", :rel => "stylesheet"}/
+    %link{:href => "css/main.css", :rel => "stylesheet", :type => "text/css"}/
+  %body
+  .row
+    / 3 sections
+    .row
+      .contact_heading Contact
+      .small-12.columns
+        .row
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.mail_image{:alt => "", :src => "images/gmail-logo.png"}/
+            .section_header
+              Email
+            .section_body
+              %a{:href => "mailto:jesper_gs_@hotmail.com"} jesper_gs_@hotmail.com
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.github_image{:alt => "", :src => "images/github-logo.png"}/
+            .section_header
+              GitHub
+            .section_body
+              %a{:href => "https://github.com/JesperGreen", :target => "_blank"} GitHub Profile
+          .small-12.medium-4.columns.text-center
+            .image_container
+              %img.phone_image{:alt => "", :src => "images/phone-logo.jpg"}/
+            .section_header
+              Phone
+            .section_body
+              %a{:href => "tel:+46760805391"} Call me
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+            %br
+    %script{:src => "https://code.jquery.com/jquery-2.1.4.js"}
+    %script{:src => "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.1.1/foundation.js"}
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83583708-1', 'auto');
+      ga('send', 'pageview');
